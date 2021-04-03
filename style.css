@@ -1,3 +1,6 @@
+/*========================================
+Basic Styles - general
+==========================================*/
 
 * {
     box-sizing: border-box;
@@ -5,4 +8,25 @@
 
 html {
     font-size: 16px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d3843;
+    color: #fff;
+    text-align: center;
+    min-height: 70px;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.15em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Merriweather', serif; 
 }
