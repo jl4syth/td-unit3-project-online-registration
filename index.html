@@ -95,12 +95,27 @@
                     <fieldset class="newsletter">
                         <legend class="news">Newsletter</legend>
                         <label>Select the newsletters you would like to recieve</label>
-                        <input type="checkbox" id="html" name="html_option"><label for="html">HTML News</label>
-                        <input type="checkbox" id="css" name="css_option"><label for="css">CSS News</label>
-                        <input type="checkbox" id="java" name="java_option"><label for="java">Javascript News</label>
+                        <div class="check">
+                            <input type="checkbox" id="html" name="html_option">
+                            <label for="html">HTML News</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="css" name="css_option">
+                            <label for="css">CSS News</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="java" name="java_option">
+                            <label for="java">Javascript News</label>
+                        </div>
                         <label>Newsletter format</label>
-                        <input type="radio" id="html-form" name="html_form_option"><label for="html-form">HTML</label>
-                        <input type="radio" id="plain" name="plain_option"><label for="plain">Plain text</label>
+                        <div>
+                        <input type="radio" id="html-form" name="html_form_option">
+                        <label for="html-form">HTML</label>
+                        </div>
+                        <div>
+                        <input type="radio" id="plain" name="plain_option">
+                        <label for="plain">Plain text</label>
+                        </div>
                         <label for="topics">Other topics you'd like to hear about</label>
                         <textarea type="textarea" id="topics" name="user_comments"></textarea>
                         <button type="submit" id="sign-up" name="sign_up_button">Sign Up</button>

@@ -37,7 +37,6 @@ legend {
     font-size: 1.1em;
     font-weight: 700;
     color: #2d3843;
-    margin-bottom: 2rem;
 }
 
 label {
@@ -46,7 +45,9 @@ label {
     margin-bottom: .5rem;
 }
 
-input {
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
     background-color: #eff0f1;
     border: none;
     min-height: 50px;
@@ -115,23 +116,27 @@ form {
 .contact-info {
     display: flex;
     flex-direction: column;
+    border-bottom: 2px solid #2d3843;
 }
 
 .newsletter {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-top: 2px solid #2d3843;
-}
-
-input[type="checkbox"] {
-    width: 5%;
+    margin-top: 2rem;
 }
 
 textarea {
+    border: none;
+    background-color: #eff0f1;
     width: 100%;
 }
 
 button {
-    width: 90%;
+    width: 100%;
+    background-color: #51bcb5;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    min-height: 50px;
+    font-size: 1em;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
 }
