@@ -28,14 +28,63 @@ h1 {
     color: #fff;
 }
 
+h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
 legend {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 700;
     color: #2d3843;
+    margin-bottom: 2rem;
+}
+
+label {
+    color: #abb2b9;
+    font-size: .85em;
+    margin-bottom: .5rem;
+}
+
+input {
+    background-color: #eff0f1;
+    border: none;
+    min-height: 50px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+select {
+    background-color: #eff0f1;
+    border: none;
+    min-height: 50px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+option {
+    color: #eff0f1;
+    margin-left: 20px;
+}
+
+::placeholder {
+    text-align: right;
+    margin-right: 20px;
+    color: #abb2b9;
+    font-style: italic;
+}
+
+#state {
+    color: #abb2b9;
+    padding-left: 10px;
+}
+
+#zip {
+    width: 50%;
 }
 
 p {
-    color: lightgray;
+    color: #abb2b9;
     font-size: .9em;
     line-height: 1.5;
     font-weight: 300;
@@ -44,7 +93,7 @@ p {
 .form-heading {
     text-align: center;
     padding-bottom: 2rem;
-    border-bottom: 4px solid #2d3843;
+    border-bottom: 3px solid #2d3843;
     width: 90%;
     margin: auto;
 }
@@ -60,7 +109,7 @@ p {
 }
 
 form {
-    margin: 2rem auto;
+    margin: 1.5rem auto;
 }
 
 .contact-info {
@@ -69,7 +118,14 @@ form {
 }
 
 .newsletter {
-    border-top: 1px solid #2d3843;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 2px solid #2d3843;
+}
+
+input[type="checkbox"] {
+    width: 5%;
 }
 
 textarea {
