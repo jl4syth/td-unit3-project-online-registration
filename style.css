@@ -61,7 +61,9 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+select,
+textarea {
     background-color: #fff;
     border: none;
     height: 50px;
@@ -70,13 +72,6 @@ input[type="tel"] {
     padding: 15px;
 }
 
-select {
-    background-color: #fff;
-    border: none;
-    min-height: 50px;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-}
 
 option {
     color: #fff;
@@ -84,11 +79,8 @@ option {
 }
 
 textarea {
-    border: none;
-    background-color: #fff;
     width: 100%;
-    min-height: 100px;
-    border-radius: 5px;
+    height: 100px;
     margin: 1.5em auto;
 }
 
@@ -174,12 +166,20 @@ IDs and Classes - Styles
 Pseudo-Class Selector Styles
 ==========================================*/
 
-input:focus,
-select:focus,
-textarea:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
     outline: 0;
     border: 2px solid #436688;
     height: 55px;
+    transition: height .25s;
+}
+
+textarea:focus {
+    outline: 0;
+    border: 2px solid #436688;
+    height: 105px;
     transition: height .25s;
 }
 
