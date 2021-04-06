@@ -64,9 +64,10 @@ input[type="email"],
 input[type="tel"] {
     background-color: #fff;
     border: none;
-    min-height: 50px;
+    height: 50px;
     border-radius: 5px;
     margin-bottom: 1rem;
+    padding: 15px;
 }
 
 select {
@@ -97,11 +98,10 @@ button {
     border: none;
     color: white;
     border-radius: 5px;
-    min-height: 60px;
+    height: 60px;
     font-size: 1em;
     font-family: 'Merriweather', serif;
     font-weight: 700;
-    margin: .5em auto;
 }
 
 footer {
@@ -175,16 +175,12 @@ Pseudo-Class Selector Styles
 ==========================================*/
 
 input:focus,
-select:focus {
-    outline: 0;
-    border: 2px solid #436688;
-    padding: 15px;
-}
-
+select:focus,
 textarea:focus {
     outline: 0;
     border: 2px solid #436688;
-    padding: 15px;
+    height: 55px;
+    transition: height .25s;
 }
 
 button:hover {
@@ -194,8 +190,7 @@ button:hover {
 
 button:focus {
     outline: none;
-    transition: height;
-    height: 80px;
+    
 }
 
 ::placeholder {
@@ -244,7 +239,7 @@ Desktop Styles
     }
 
     button:focus {
-        height: 50px;
+
     }
 
     /*-------Class and ID Styles-------*/
