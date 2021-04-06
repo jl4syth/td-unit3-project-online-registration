@@ -9,6 +9,7 @@ Basic Styles - general
 html {
     font-family: 'Merriweather', serif;
     font-size: 16px;
+    background-color: #e7e7e7;
 }
 
 header {
@@ -33,22 +34,35 @@ h2 {
     font-weight: 700;
 }
 
+p {
+    color: #5C6A75;
+    font-size: .9em;
+    line-height: 1.5;
+    font-weight: 300;
+    padding-bottom: 1em;
+}
+
+form {
+    margin: 1.5rem auto;
+}
+
 legend {
     font-size: 1.1em;
     font-weight: 700;
     color: #2d3843;
+    padding-bottom: 1em;
 }
 
 label {
-    color: #abb2b9;
+    color: #5C6A75;
     font-size: .85em;
-    margin-bottom: .5rem;
+    margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-    background-color: #eff0f1;
+    background-color: #fff;
     border: none;
     min-height: 50px;
     border-radius: 5px;
@@ -56,7 +70,7 @@ input[type="tel"] {
 }
 
 select {
-    background-color: #eff0f1;
+    background-color: #fff;
     border: none;
     min-height: 50px;
     border-radius: 5px;
@@ -64,19 +78,51 @@ select {
 }
 
 option {
-    color: #eff0f1;
+    color: #fff;
     margin-left: 20px;
 }
 
-::placeholder {
-    text-align: right;
-    margin-right: 20px;
-    color: #abb2b9;
-    font-style: italic;
+textarea {
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 5px;
+    margin: 1.5em auto;
 }
 
+button {
+    width: 100%;
+    background-color: #51bcb5;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    min-height: 60px;
+    font-size: 1em;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    margin: .5em auto;
+}
+
+footer {
+    padding-top: 1em;
+    padding-bottom: 5em;
+    background-color: #2d3843;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    font-size: .9em;
+}
+
+/*========================================
+IDs and Classes - Styles
+==========================================*/
+
 #state {
-    color: #abb2b9;
+    color: #5C6A75;
     padding-left: 10px;
 }
 
@@ -84,16 +130,9 @@ option {
     width: 50%;
 }
 
-p {
-    color: #abb2b9;
-    font-size: .9em;
-    line-height: 1.5;
-    font-weight: 300;
-}
-
 .form-heading {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1em;
     border-bottom: 3px solid #2d3843;
     width: 90%;
     margin: auto;
@@ -109,34 +148,122 @@ p {
     margin: 3px auto;
 }
 
-form {
-    margin: 1.5rem auto;
+.ex-space {
+    margin-bottom: .75em;
 }
 
 .contact-info {
+    border-bottom: 2px solid #2d3843;
+}
+
+.contact-inputs {   
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid #2d3843;
 }
 
 .newsletter {
     margin-top: 2rem;
 }
 
-textarea {
-    border: none;
-    background-color: #eff0f1;
-    width: 100%;
+.check,
+.radio {
+    padding-bottom: 1em;
 }
 
-button {
-    width: 100%;
-    background-color: #51bcb5;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    min-height: 50px;
-    font-size: 1em;
-    font-family: 'Merriweather', serif;
-    font-weight: 700;
+/*========================================
+Pseudo-Class Selector Styles
+==========================================*/
+
+input:focus,
+select:focus {
+    outline: 0;
+    border: 2px solid #436688;
+    padding: 15px;
+}
+
+textarea:focus {
+    outline: 0;
+    border: 2px solid #436688;
+    padding: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+button:focus {
+    outline: none;
+    transition: height;
+    height: 80px;
+}
+
+::placeholder {
+    text-align: right;
+    margin-right: 20px;
+    color: #5C6A75;
+    font-style: italic;
+}
+
+/*========================================
+Desktop Styles
+==========================================*/
+
+@media (min-width: 768px) {
+
+    /*-------General Styles-------*/
+
+    header {
+        min-height: 50px;
+    }
+
+    h1 {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    p,
+    label {
+        font-size: .75em;
+    }
+
+    label {
+        width: 30%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 70%;
+        min-height: 35px;
+    }
+
+    button {
+        min-height: 40px;
+    }
+
+    button:focus {
+        height: 50px;
+    }
+
+    /*-------Class and ID Styles-------*/
+
+    .form-heading {
+        width: 60%;
+    }
+
+    .form {
+        width: 60%;
+    }
+
+    .contact-inputs {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #zip {
+        width: 25%;
+    }
+
 }
