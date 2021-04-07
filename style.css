@@ -190,7 +190,6 @@ button:hover {
 
 button:focus {
     outline: none;
-    
 }
 
 ::placeholder {
@@ -236,10 +235,6 @@ Desktop Styles
 
     button {
         min-height: 40px;
-    }
-
-    button:focus {
-
     }
 
     /*-------Class and ID Styles-------*/
